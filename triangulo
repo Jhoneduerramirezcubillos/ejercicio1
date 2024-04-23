@@ -1,0 +1,35 @@
+public class Triangulo {
+    private int base;
+    private int altura;
+
+    // Constructor con parámetros
+    public Triangulo(int base, int altura) {
+        this.base = base;
+        this.altura = altura;
+    }
+
+    // Método para asignar la base
+    public void asignaBase(int base) {
+        this.base = base;
+    }
+
+    // Método para asignar la altura
+    public void asignaAltura(int altura) {
+        this.altura = altura;
+    }
+
+    // Método para consultar la base
+    public int consultaBase() {
+        return this.base;
+    }
+
+    // Método para consultar la altura
+    public int consultaAltura() {
+        return this.altura;
+    }
+
+    // Método para calcular el área del triángulo
+    public double calculaArea() {
+        return (base * altura) / 2.0;
+    }
+}

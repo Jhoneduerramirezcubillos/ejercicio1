@@ -1,0 +1,31 @@
+public class Prueba {
+    public static void main(String[] args) {
+        // Crear varios objetos de Triangulo
+        Triangulo triangulo1 = new Triangulo(5, 10);
+        Triangulo triangulo2 = new Triangulo(7, 14);
+        Triangulo triangulo3 = new Triangulo(9, 18);
+
+        // Consultar los atributos de los triángulos
+        System.out.println("Triángulo 1: Base = " + triangulo1.consultaBase() + ", Altura = " + triangulo1.consultaAltura());
+        System.out.println("Triángulo 2: Base = " + triangulo2.consultaBase() + ", Altura = " + triangulo2.consultaAltura());
+        System.out.println("Triángulo 3: Base = " + triangulo3.consultaBase() + ", Altura = " + triangulo3.consultaAltura());
+
+        // Cambiar el valor de los atributos de los triángulos
+        triangulo1.asignaBase(10);
+        triangulo1.asignaAltura(20);
+        triangulo2.asignaBase(14);
+        triangulo2.asignaAltura(28);
+        triangulo3.asignaBase(18);
+        triangulo3.asignaAltura(36);
+
+        // Consultar los atributos modificados de los triángulos
+        System.out.println("Triángulo 1 modificado: Base = " + triangulo1.consultaBase() + ", Altura = " + triangulo1.consultaAltura());
+        System.out.println("Triángulo 2 modificado: Base = " + triangulo2.consultaBase() + ", Altura = " + triangulo2.consultaAltura());
+        System.out.println("Triángulo 3 modificado: Base = " + triangulo3.consultaBase() + ", Altura = " + triangulo3.consultaAltura());
+
+        // Probar el método para calcular el área de los triángulos
+        System.out.println("Área del Triángulo 1: " + triangulo1.calculaArea());
+        System.out.println("Área del Triángulo 2: " + triangulo2.calculaArea());
+        System.out.println("Área del Triángulo 3: " + triangulo3.calculaArea());
+    }
+}
